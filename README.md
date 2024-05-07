@@ -1,5 +1,7 @@
 Automation on DemoBlaze Application
+
 Technologies:
+
 -Programing language: Java
 
 -Design Pattern: Page Object Model (POM)
