@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name ="Scenario_2_Test">
+    <test name="Tests">
+        <classes>
+            <class name ="org.example.Base.BaseTest"/>
+            <class name="org.example.HomePage.LoadPageTest"/>
+<!--            <class name="org.example.Signup.SignupTest"/>-->
+            <class name="org.example.Login.LoginTest"/>
+            <class name="org.example.Contact.ContactTest"/>
+            <class name="org.example.Categories.LaptopCategoryTest"></class>
+            <class name="org.example.ProductPage.MacBookAirProductPageTest"></class>
+            <class name="org.example.Categories.MonitorCategoryTest"></class>
+            <class name="org.example.ProductPage.AppleMonitor24ProductPageTest"></class>
+            <class name="org.example.Cart.CartPageTest"></class>
+            <class name="org.example.HomePage.LogoutTest"></class>
+        </classes>
+    </test>
+</suite>
