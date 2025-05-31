@@ -1,19 +1,14 @@
 package org.example.Pages;
-
-import org.example.Pages.*;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.ui.WebDriverWait;
-
-
 import static org.openqa.selenium.support.ui.ExpectedConditions.visibilityOf;
 
 public class HomePage extends PageSample {
     public HomePage(WebDriver driver) {super(driver);}
     @FindBy(id="signin2")
     WebElement signUpButton;
-    @FindBy(id="login2")
+    @FindBy(xpath="//a[@class=\"nav-link\"][contains(text(),\"Log in\")]")
     WebElement loginButton;
     @FindBy(css="a[data-target*='exampleModal']")
     WebElement contactButton;
@@ -58,8 +53,7 @@ public class HomePage extends PageSample {
         return new HomePage(driver);
     }
 
-    public boolean checLogout(){
-        if(visibilityOf(loginButton)==null){return true;}
-        else{return false;}
+    public boolean checkLogout(){
+        return loginButton.isDisplayed();
     }
 }

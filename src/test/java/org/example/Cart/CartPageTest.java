@@ -12,15 +12,7 @@ import static org.testng.Assert.assertEquals;
 public class CartPageTest extends BaseTest {
     private CartPage cartPage;
 
-    public void setProductPriceSum(BigDecimal productPriceSum) {
-        this.productPriceSum = productPriceSum;
-    }
 
-    public BigDecimal getProductPriceSum() {
-        return productPriceSum;
-    }
-
-    private BigDecimal productPriceSum;
     @BeforeClass
     public void loadCartPage(){this.cartPage= homePage.clickCartButton();}
     @Test(priority = 1)

@@ -10,6 +10,7 @@ import org.testng.annotations.DataProvider;
 import org.testng.asserts.SoftAssert;
 import org.example.Pages.HomePage;
 
+import java.math.BigDecimal;
 import java.util.concurrent.TimeUnit;
 
 public class BaseTest {
@@ -53,4 +54,13 @@ public class BaseTest {
     public Object[][] purchaseDataProvider(){
         return new Object[][] {{"jan","Poland","krakow","123456789","6","2024"}};
     }
+    public void setProductPriceSum(BigDecimal productPriceSum) {
+        this.productPriceSum = productPriceSum;
+    }
+
+    public BigDecimal getProductPriceSum() {
+        return productPriceSum;
+    }
+
+    private BigDecimal productPriceSum;
 }

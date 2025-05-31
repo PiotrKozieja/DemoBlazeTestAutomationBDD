@@ -18,7 +18,7 @@ public class ContactTest extends BaseTest {
         assertEquals(contactPopUpTitle,"New message","Contact pop-up does not show up");
     }
     @Test(priority = 2, dataProvider = "contactDataProvider")
-    public void testThanksForTheMessageAlert(String contactEmail,String contactName,String contactMessage){
+    public void testThanksForTheMessageAlert(String contactEmail,String contactName,String contactMessage) throws InterruptedException {
         contactPage.fillContactFormsAndSend(contactEmail,contactName,contactMessage);
         String contactAlertMessage = contactPage.getAlertMessage();
         assertEquals(contactAlertMessage,"Thanks for the message!!","Could not send a message");

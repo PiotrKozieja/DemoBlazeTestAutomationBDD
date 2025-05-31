@@ -16,7 +16,6 @@ public class LaptopCategoryTest extends BaseTest {
     }
     @Test
     public void testLaptopCategoryLoadsCorrect(){
-        System.out.println("laptop category loads");
-        assertTrue(true,"do not loads");
+        assertTrue(laptopCategoryPage.isLaptopCategoryDisplayed());
     }
 }

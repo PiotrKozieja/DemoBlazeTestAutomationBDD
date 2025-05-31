@@ -17,10 +17,10 @@ public class LoginTest extends BaseTest {
         assertEquals(LoginPopUpTitle,"Log in","Login pop-up does not show up");
     }
     @Test(priority = 2,dataProvider = "accountDataProvider")
-    public void testLoggingin(String username1, String password1){
-        loginPage.fillLoginFormsAndLogin(username1,password1);
+    public void testLoggingIn(String username, String password){
+        loginPage.fillLoginFormsAndLogin(username,password);
         String welcomeMessage = loginPage.getWelcomeMessage();
-        assertEquals(welcomeMessage,"Welcome "+username1,"Logging in went wrong");
+        assertEquals(welcomeMessage,"Welcome "+username,"Logging in went wrong");
     }
 
 }
