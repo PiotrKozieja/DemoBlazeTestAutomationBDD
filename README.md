@@ -16,6 +16,5 @@ The framework covers essential e-commerce functionality using BDD scenarios:
 |------------|---------|---------|
 | **Java** | Programming Language | 11+ |
 | **Selenium WebDriver** | Browser Automation | Latest |
-| **Cucumber** | BDD Framework | Latest |
 | **TestNG** | Testing Framework | Latest |
 | **Maven** | Build Tool | Latest |
